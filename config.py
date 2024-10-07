@@ -33,12 +33,12 @@ DB_NAME = os.environ.get("DATABASE_NAME", "wtflinksofficial")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002358762098"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002197047425"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002358762098"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first} , Thanks for using me Join Now: @Nottyleak 🍒.\n\n")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first} , Thanks for using me Join Now: 🍒.\n\n")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "").split()):
