@@ -1,4 +1,4 @@
-#(©)CodeXBotz
+#(漏)CodeXBotz
 
 
 
@@ -38,7 +38,7 @@ FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002358762098"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first} , Thanks for using me Join Now: 🍒.\n\n")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first} , Thanks for using me Join Now: 馃崚.\n\n")
 try:
     ADMINS=[6376328008]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -47,7 +47,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "HEY {first}🌚\n \nJoin our channel to use Me Join Both Channels.")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "HEY {first}馃寶\n \nJoin our channel to use Me Join Both Channels.")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -59,7 +59,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" el
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "🚫 Please Avoid Direct Messages. I'm Here merely for file sharing!"
+USER_REPLY_TEXT = "馃毇 Please Avoid Direct Messages. I'm Here merely for file sharing!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(5191566338)
@@ -84,4 +84,3 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
-   
